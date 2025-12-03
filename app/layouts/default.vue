@@ -2,16 +2,16 @@
   <div class="min-h-screen bg-gray-100 text-gray-900">
     <!-- 상단 네비게이션 -->
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div
-        class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between"
-      >
-        <!-- Left: Logo -->
-        <NuxtLink to="/" class="text-xl font-bold text-orange-600">
-          NuxtReddit
-        </NuxtLink>
+      <div class="px-4 py-3 flex items-center justify-between">
+        <!-- Left: Logo (패딩 추가) -->
+        <div class="flex items-center px-3">
+          <NuxtLink to="/" class="text-xl font-bold text-orange-600">
+            NuxtReddit
+          </NuxtLink>
+        </div>
 
-        <!-- Middle: Search -->
-        <div class="flex-1 mx-6">
+        <!-- Middle: Search (크기 줄이기: w-full + max-w-md) -->
+        <div class="flex justify-center w-full max-w-md px-3">
           <input
             type="text"
             placeholder="검색"
@@ -19,8 +19,8 @@
           />
         </div>
 
-        <!-- Right: Login -->
-        <div>
+        <!-- Right: Login (패딩 추가) -->
+        <div class="flex justify-end px-3">
           <button
             class="px-4 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 text-sm"
           >
