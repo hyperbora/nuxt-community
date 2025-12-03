@@ -3,8 +3,7 @@
     <!-- 상단 네비게이션 -->
     <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div class="px-4 py-3 flex items-center justify-between">
-        <!-- Left: Logo (패딩 추가) -->
-        <div class="flex items-center px-3">
+        <div class="flex items-center">
           <NuxtLink to="/" class="text-xl font-bold text-orange-600">
             NuxtReddit
           </NuxtLink>
@@ -19,10 +18,9 @@
           />
         </div>
 
-        <!-- Right: Login (패딩 추가) -->
-        <div class="flex justify-end px-3">
+        <div class="flex justify-end">
           <button
-            class="px-4 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 text-sm"
+            class="px-4 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 text-sm whitespace-nowrap"
           >
             로그인
           </button>
